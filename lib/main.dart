@@ -8,6 +8,12 @@ void main() {
 
 class MyApp extends StatelessWidget {
   int counter = 42;
+  void sumar() {
+    setState() {
+      counter = counter + 1;
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -27,3 +33,5 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+
+void incrementarContador() {}

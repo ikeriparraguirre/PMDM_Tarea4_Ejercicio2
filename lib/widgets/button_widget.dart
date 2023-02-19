@@ -1,14 +1,17 @@
 import 'package:flutter/material.dart';
 
-class ButtonWidget extends StatelessWidget {
-  ButtonWidget();
+class ButtonWidget extends StatefulWidget {
+  @override
+  State<ButtonWidget> createState() => _Fecha();
+}
 
+class _Fecha extends State<ButtonWidget> {
   @override
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.all(50.0),
-      child: FlatButton(
-        color: Colors.blue[300],
+      child: TextButton(
+        //color: Colors.blue[300],
         onPressed: () => {
           print("Cuando pulsamos este botón NO pasa nada..."),
           print("... pero queremos que se actualice el contador!!!!"),
